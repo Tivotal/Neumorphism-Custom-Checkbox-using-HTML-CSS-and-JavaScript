@@ -42,9 +42,9 @@ body {
   outline: none;
   appearance: none;
   box-shadow: -8px -4px 8px 0px #ffffff73,
-    8px 4px 12px 0px rgba(94, 104, 121, 0.288),
-    inset -4px -4px 4px 0px #ffffff73,
-    inset 4px 4px 4px 0px rgba(94, 104, 121, 0.288);
+              8px 4px 12px 0px rgba(94, 104, 121, 0.288),
+              inset -4px -4px 4px 0px #ffffff73,
+              inset 4px 4px 4px 0px rgba(94, 104, 121, 0.288);
   border-radius: 25px;
   cursor: pointer;
   position: relative;
