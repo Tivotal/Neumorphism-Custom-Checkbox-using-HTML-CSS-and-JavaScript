@@ -1,0 +1,89 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dde1e7;
+}
+
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 5px;
+}
+
+.wrapper .toggle {
+  height: 40px;
+  width: 100px;
+}
+
+.wrapper .toggle input {
+  height: 100%;
+  width: 100%;
+  background: #dde1e7;
+  outline: none;
+  appearance: none;
+  box-shadow: -8px -4px 8px 0px #ffffff73,
+    8px 4px 12px 0px rgba(94, 104, 121, 0.288),
+    inset -4px -4px 4px 0px #ffffff73,
+    inset 4px 4px 4px 0px rgba(94, 104, 121, 0.288);
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper .toggle input::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #dde1e7;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+  transition: 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.wrapper .toggle input:checked:before {
+  left: 60px;
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+}
+
+.wrapper .text::before {
+  position: relative;
+  content: "Unchecked";
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #a6a6a6;
+  letter-spacing: 1px;
+  float: right;
+  width: 112px;
+}
+
+.wrapper .text.checked::before {
+  content: "Checked";
+  color: #3498db;
+}
